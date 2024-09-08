@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=SUSE:wght@100;800&display=swap');
+
+.container-fluid, .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 500px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 234);
+    padding: 10px 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+header img {
+    max-width: 300px;
+    height: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    margin: 0 6px;
+    font-family: "SUSE", sans-serif;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: rgb(0, 66, 90);
+}
+
+h1, h2, h3, p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.125rem;
+    color: rgb(0, 66, 90);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.25rem;
+    color: black;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: rgb(0, 19, 77);
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.375rem;
+    color: rgb(0, 42, 106);
+}
+
+.nosotros, .tips-group, .publicaciones, .eventos {
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    li a {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    .nosotros, .tips-group, .publicaciones, .eventos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.nosotros-group img, .tips-group img {
+    border-radius: 100%;
+    width: 200px;
+    margin: 40px;
+}
+
+.funciones, .vision, .historia, .residuos, .belleza, .hogar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contacto {
+    background-color: rgb(255, 255, 214);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.25rem;
+}
